@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="main-title">
+            Tic Tac Toe
+        </div>
+        <div class="game">
+            <div class="winner">
+                Winner is you (X)
+            </div>
+            <div class="turn">
+                <div class="title">Turn for</div>
+                <div class="options">
+                    <div class="item active" id="turn-x">
+                        <span>
+                            X
+                        </span>
+                    </div>
+                    <div class="item" id="turn-o">
+                        <span>
+                            O
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="item">
+                    <span></span>
+                </div>
+                <div class="item">
+                    <span></span>
+                </div>
+                <div class="item">
+                    <span></span>
+                </div>
+                <div class="item">
+                    <span></span>
+                </div>
+                <div class="item">
+                    <span></span>
+                </div>
+                <div class="item">
+                    <span></span>
+                </div>
+                <div class="item">
+                    <span></span>
+                </div>
+                <div class="item">
+                    <span></span>
+                </div>
+                <div class="item">
+                    <span></span>
+                </div>
+            </div>
+            <div class="footer">
+                <button id="reset-game">Reset Game</button>
+            </div>
+        </div>
+        <div class="score">
+            <div class="title">
+                Score
+            </div>
+            <div class="list">
+                <div class="item">
+                    <div class="text">
+                        You (X)
+                    </div>
+                    <div class="count">
+                        Score: <div class="count-number">0</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        TIE
+                    </div>
+                    <div class="count">
+                        Score: <div class="count-number">0</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        Computer (O)
+                    </div>
+                    <div class="count">
+                        Score: <div class="count-number">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

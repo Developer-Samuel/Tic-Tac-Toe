@@ -1,0 +1,213 @@
+*,
+*::before,
+*::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans';
+}
+body
+{
+    background: #30343B;
+}
+.container
+{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 1080px;
+    height: 1080px;
+}
+.main-title
+{
+    position: absolute;
+    top: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #29F251;
+    width: 100%;
+    text-align: center;
+}
+.game
+{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 160px;
+    width: 500px;
+    height: 800px;
+}
+.game .turn 
+{
+    position: absolute;
+    width: 100%;
+}
+.game .turn .title
+{
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.game .turn .options
+{
+    position: relative;
+    top: 15px;
+    width: 150px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}
+.game .turn .options .item 
+{
+    position: relative;
+    width: 100%;
+    border: 2px solid #29F251;
+}
+.game .turn .options .item.active 
+{
+    background: #29F251;
+}
+.game .turn .options .item span 
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+.game .turn .options .item.active span
+{   
+    color: #000;
+}
+.game .winner 
+{
+    position: absolute;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+.game .fields
+{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    
+}
+.game .fields .item 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 12.5px;
+    cursor: pointer;
+}
+.game .fields .item span
+{
+    position: absolute;
+    font-size: 52px;
+    font-weight: 700;
+    color: #29F251;
+}
+.game .footer
+{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}   
+.game .footer button
+{
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 7.5px 30px;
+    background: #29F251;
+    border: 0;
+    border-radius: 12.5px;
+    box-shadow: 0 0 16px 1px #29F251;
+    outline: 0;
+    cursor: pointer;
+}
+.score
+{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 30px;
+    width: 600px;
+    height: 130px;
+}
+.score .title 
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #29F251;
+    font-size: 32px;
+    font-weight: 700;
+}
+.score .list 
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score .list .item 
+{
+    position: relative;
+    width: 185px;
+    height: 100%;
+    background: #29F251;
+    border: 2px solid #29F251;
+    border-radius: 12.5px;
+}
+.score .list .item .text 
+{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 2.5px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.score .list .item .count 
+{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 2.5px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.score .list .item .count .count-number
+{
+    display: inline;
+}
